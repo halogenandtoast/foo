@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'monban-generators'
 gem 'monban'
 gem 'rails', '4.1.4'
 gem 'sqlite3'
@@ -10,5 +9,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
 
+
+group :development do
+  gem 'spring'
+  gem 'monban-generators'
+end
